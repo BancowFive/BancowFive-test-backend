@@ -4,5 +4,5 @@ public class user {
     public String message(){
         return "해줘 해줘 해줘!!!!!!!!!";
     }
-    public String user(){return "ㅠㅠㅠㅠㅠ";}
+    public String user(){return "ㅠㅠㅠㅠbㅠ";}
 }
