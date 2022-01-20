@@ -7,11 +7,7 @@ import java.util.Date;
 
 @Entity
 @Table(name = "farm")
-@ToString
-@Getter
-@Setter
-@Builder
-@AllArgsConstructor
+
 @NoArgsConstructor
 public class Farm {
     @Id
