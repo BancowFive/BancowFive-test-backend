@@ -1,4 +1,2 @@
-package kimdaehee;
-
-public class user5 {
+package kimdaehee;public class user5 {
 }
