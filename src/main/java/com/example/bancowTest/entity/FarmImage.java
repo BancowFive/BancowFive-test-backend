@@ -19,14 +19,11 @@ public class FarmImage extends BaseEntity{
     //UUID가 적용된 이미지 이름
     private String changedImageName;
 
-    // 확장자
-    private String extension;
-
     // 이미지 경로
     private String ImageUrl;
 
     // 썸네일
-    private String thumbnailImageUrl;
+    private String thumbnailUrl;
 
     // 이미지 타입
     @Enumerated(EnumType.STRING)

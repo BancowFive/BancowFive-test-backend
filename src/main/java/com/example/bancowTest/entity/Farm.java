@@ -27,22 +27,28 @@ public class Farm extends BaseEntity {
     @Size(min = 4, max = 4)
     private String password;
 
-    // 약관 동의 (아마 여러개)
-    private Boolean agreementCondition;
+    // 이용 약관 동의 (아마 여러개)
+    private Boolean serviceTerms;
+
+    // 개인정보 취금 위탁 동의
+    private Boolean ServiceTerms;
+
+    // 개인정보 선택/수집 이용
+    private Boolean serviceTerms;
 
     // 이메일
     @Email
     private String email;
 
     // 페이지 저장
-    private Long savedPage;
+    private Long pageNum;
 
 
     // 농장주 이름
     private String name;
 
     // 사료
-    private String feed;
+    private String fodder;
 
     // 농장 주소
     private String farmAddress;
@@ -57,40 +63,42 @@ public class Farm extends BaseEntity {
     // 농장 자가 조사
     private String ownFarm;
 
-    // 농장 시설 형태 조사
-    private String farmFacilityType;
+    // 농장 사육 형태 조사
+    private String breedingType;
 
     // 가축의 수
-    private String howManyCow;
+    private String population;
 
 
     // 가축 사육업 등록증 유무
-    private Boolean livestockBreedingBusinessRegistrationCertificateCheck;
+    private Boolean livestockFarmingBusinessRegistration;
 
     // 축사시설 구조도 유무
-    private Boolean structuralDiagramOfLivestockFacilitiesCheck;
+    private Boolean facilitiesStructure;
 
     // 1년간 사료비 명세서 유무
-    private Boolean one_year_feed_cost_statement_check;
+    private Boolean annualFodderCostSpecification;
 
-    // 1년간 출하성적서 유무
-    private Boolean one_year_shipping_report_check;
+    // 1년간 출하 성적서 유무
+    private Boolean annualInspectionReport;
 
     // 사업자 등록증 유무
-    private Boolean business_registration_check;
+    private Boolean businessLicense;
 
+    // 입점 상태
+    private inProgress;
 
     // 1차 작성중
-    private LocalDateTime firstApplication;
+    private LocalDateTime step1InProgress;
 
-    // 1차 제출
-    private LocalDateTime firstComplete;
+    // 1차 제출 완료
+    private LocalDateTime step1Completed;
 
     // 2차 작성중
-    private LocalDateTime secondApplication;
+    private LocalDateTime step2InProgress;
 
-    // 2차 제출
-    private LocalDateTime secondComplete;
+    // 2차 제출 완료
+    private LocalDateTime step2Completed;
 
     // 실사 요청일
     private LocalDateTime investigationRequest;
@@ -99,7 +107,7 @@ public class Farm extends BaseEntity {
     private LocalDateTime investigationConfirm;
 
     // 입점 완료
-    private LocalDateTime enteringConfirm;
+    private LocalDateTime processDone;
 
 
     @JsonBackReference

@@ -17,11 +17,8 @@ public class FarmFile extends BaseEntity{
     // 원래 파일 이름
     private String originalFileName;
 
-    //UUID가 적용된 파일 이름
+    // UUID가 적용된 파일 이름
     private String changedFileName;
-
-    // 확장자
-    private String extension;
 
     // 파일 경로
     private String FileUrl;
