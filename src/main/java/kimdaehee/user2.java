@@ -7,5 +7,6 @@ public class user2 {
 
     public String user() {
         return "222222222리턴리턴리턴리턴리턴리턴리턴리턴리턴";
+
     }
 }
