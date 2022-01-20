@@ -1,4 +1,4 @@
-package kimdaehee;
+package com.example.test.kimdaehee;
 
 public class user {
     public String message(){

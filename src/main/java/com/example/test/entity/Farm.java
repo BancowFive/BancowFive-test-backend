@@ -1,6 +1,6 @@
-package com.example.demo.entity;
+package com.example.test.entity;
 
-import lombok.*;
+import l
 
 import javax.persistence.*;
 import java.util.Date;
