@@ -1,13 +1,17 @@
-package com.example.demo.entity;
+package com.example.test.entity;
 
-import lombok.*;
+import l
 
 import javax.persistence.*;
 import java.util.Date;
 
 @Entity
 @Table(name = "farm")
-
+@ToString
+@Getter
+@Setter
+@Builder
+@AllArgsConstructor
 @NoArgsConstructor
 public class Farm {
     @Id
