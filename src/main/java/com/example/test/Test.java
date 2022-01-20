@@ -9,7 +9,7 @@ public class Test {
     }
 
     public void test1() {
-
+        System.out.println("gkdl");
     }
     public void test2() {
 
